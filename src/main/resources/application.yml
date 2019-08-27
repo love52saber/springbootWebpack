@@ -1,0 +1,45 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://106.12.83.162:8761/eureka/
+#      defaultZone: http://172.25.126.2:8761/eureka/
+#      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    enabled: true
+  instance:
+#    instance-id: JY-RISK-MANAGER-SERVER
+#    instance-id: SUZHOU-RISK-MANAGER-SERVER
+    instance-id: YANDU-RISK-MANAGER-SERVER
+    prefer-ip-address: true
+remote:
+  maxTotalConnect: 0
+  maxConnectPerRoute: 200
+  connectTimeout: 9000
+  readTimeout: 9000
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+
+#server:
+#  port: 9022
+#spring:
+#  application:
+#    name: JY-RISK-MANAGER-SERVER
+#
+#eureka:
+#  client:
+#    service-url:
+##      defaultZone: http://2.18.223.74:8761/eureka/
+#      defaultZone: http://127.0.0.1:8761/eureka/
+#    fetch-registry: true
+#    enabled: true
+#  instance:
+#    instance-id: JY-RISK-MANAGER-SERVER
+#    prefer-ip-address: true
+#
+#remote:
+#  maxTotalConnect: 0
+#  maxConnectPerRoute: 200
+#  connectTimeout: 9000
+#  readTimeout: 9000
